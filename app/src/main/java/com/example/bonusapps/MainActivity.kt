@@ -16,6 +16,7 @@ class MainActivity : AppCompatActivity() {
         val btArray= findViewById<Button>(R.id.btArray)
         val btLife= findViewById<Button>(R.id.btLife)
         val btSC= findViewById<Button>(R.id.btSC)
+        val btImage= findViewById<Button>(R.id.btImage)
 
         btCounter.setOnClickListener{
           startActivity(Intent(this,ButtonCounter::class.java))
@@ -31,6 +32,9 @@ class MainActivity : AppCompatActivity() {
         }
         btSC.setOnClickListener{
             startActivity(Intent(this,SimpleCalculator::class.java))
+        }
+        btImage.setOnClickListener{
+            startActivity(Intent(this,ImageViews::class.java))
         }
     }
 }
