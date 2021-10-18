@@ -14,6 +14,7 @@ class MainActivity : AppCompatActivity() {
         val btCounter= findViewById<Button>(R.id.btCounter)
         val btPres= findViewById<Button>(R.id.btPres)
         val btArray= findViewById<Button>(R.id.btArray)
+        val btLife= findViewById<Button>(R.id.btLife)
 
         btCounter.setOnClickListener{
           startActivity(Intent(this,ButtonCounter::class.java))
@@ -23,6 +24,9 @@ class MainActivity : AppCompatActivity() {
         }
         btArray.setOnClickListener{
             startActivity(Intent(this,ArrayListActivity::class.java))
+        }
+        btLife.setOnClickListener{
+            startActivity(Intent(this,ActivityLifecycle::class.java))
         }
     }
 }
