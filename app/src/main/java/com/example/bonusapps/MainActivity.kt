@@ -12,9 +12,13 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         getSupportActionBar()!!.setBackgroundDrawable(AppCompatResources.getDrawable(this, R.drawable.custom_button))
         val btCounter= findViewById<Button>(R.id.btCounter)
+        val btPres= findViewById<Button>(R.id.btPres)
 
         btCounter.setOnClickListener{
           startActivity(Intent(this,ButtonCounter::class.java))
+        }
+        btPres.setOnClickListener{
+            startActivity(Intent(this,PersistentCalculation::class.java))
         }
     }
 }
