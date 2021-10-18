@@ -15,6 +15,7 @@ class MainActivity : AppCompatActivity() {
         val btPres= findViewById<Button>(R.id.btPres)
         val btArray= findViewById<Button>(R.id.btArray)
         val btLife= findViewById<Button>(R.id.btLife)
+        val btSC= findViewById<Button>(R.id.btSC)
 
         btCounter.setOnClickListener{
           startActivity(Intent(this,ButtonCounter::class.java))
@@ -27,6 +28,9 @@ class MainActivity : AppCompatActivity() {
         }
         btLife.setOnClickListener{
             startActivity(Intent(this,ActivityLifecycle::class.java))
+        }
+        btSC.setOnClickListener{
+            startActivity(Intent(this,SimpleCalculator::class.java))
         }
     }
 }
